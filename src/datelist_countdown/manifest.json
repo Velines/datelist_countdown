@@ -1,0 +1,8 @@
+{
+  "domain": "datelist_countdown",
+  "name": "List of dates countdown sensor",
+  "documentation": "https://www.google.de",
+  "dependencies": [],
+  "codeowners": [],
+  "requirements": []
+}
