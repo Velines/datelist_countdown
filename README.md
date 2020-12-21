@@ -53,7 +53,12 @@ In combination with custom:button-card:
         - grid-template-rows: min-content 1fr min-content
 
 
-
-
-
 ![](example.png)
+
+
+To format the date into format "dd.mm.yyyy" as commonly used in Germany, you can use this line inside the code depicted above:
+
+    label: >-
+      [[[ var d = new Date(Date.parse(`${states['sensor.papiermull'].attributes['next']}`));
+      return ("0" + (d.getDay() + 1)).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2) + "." + d.getFullYear();
+       ]]]
