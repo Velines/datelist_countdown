@@ -60,5 +60,5 @@ To format the date into format "dd.mm.yyyy" as commonly used in Germany, you can
 
     label: >-
       [[[ var d = new Date(Date.parse(`${states['sensor.papiermull'].attributes['next']}`));
-      return ("0" + (d.getDay() + 1)).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2) + "." + d.getFullYear();
+      return ("0" + (d.getDate() + 1)).slice(-2) + "." + ("0" + (d.getMonth() + 1)).slice(-2) + "." + d.getFullYear();
        ]]]
